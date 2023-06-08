@@ -1,24 +1,5 @@
 [
   {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "did",
-        "type": "string"
-      },
-      {
-        "indexed": false,
-        "internalType": "string",
-        "name": "didDocument",
-        "type": "string"
-      }
-    ],
-    "name": "DIDSet",
-    "type": "event"
-  },
-  {
     "inputs": [
       {
         "internalType": "string",
@@ -62,6 +43,25 @@
         "internalType": "string",
         "name": "did",
         "type": "string"
+      }
+    ],
+    "name": "getVcHash",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "did",
+        "type": "string"
       },
       {
         "internalType": "string",
@@ -70,6 +70,24 @@
       }
     ],
     "name": "setDID",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "did",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "vcHash",
+        "type": "string"
+      }
+    ],
+    "name": "setVcHash",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

@@ -75,10 +75,7 @@ const LoginPage: React.FC = () => {
       console.log("account :", account);
       console.log("balance :", userBlance);
       console.log("chainid :", chainid);
-      // const contractAddress = "0x850EC3780CeDfdb116E38B009d0bf7a1ef1b8b38"; // Replace this with your contract address
-      const NewcontractAddress = "0x1ACcBD355245AbA93CE46D33ab1D0152CE33Fd00";
-      // const contractAddress = "0x850ec3780cedfdb116e38b009d0bf7a1ef1b8b38"; // Replace this with your contract address
-
+      const NewcontractAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
       // const contractABI = SmartContractABI as AbiItem[]; // Replace this with your contract ABI
       const Abi = SmartContractABI as AbiItem[];
       console.log("Abi", Abi)
