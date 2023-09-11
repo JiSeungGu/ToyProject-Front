@@ -7,7 +7,7 @@ import axios from "axios";
 import './App.css';
 // Replace this with the ABI of your deployed smart contract
 import SmartContractABI from './SmartContractABI.json';
-import NewSmartContractABI from './NewSmartContractABI.json'
+// import NewSmartContractABI from './NewSmartContractABI.json'
 import Button from '@mui/material/Button';
 const LoginPage: React.FC = () => {
   const COGNITO_LOGIN_URL =
@@ -75,7 +75,9 @@ const LoginPage: React.FC = () => {
       console.log("account :", account);
       console.log("balance :", userBlance);
       console.log("chainid :", chainid);
-      const NewcontractAddress = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512";
+      // const NewcontractAddress = "0xC5888275e0a1ca13a26463318105957aa4d1feD7";
+      const NewcontractAddress = "0x850EC3780CeDfdb116E38B009d0bf7a1ef1b8b38";
+
       // const contractABI = SmartContractABI as AbiItem[]; // Replace this with your contract ABI
       const Abi = SmartContractABI as AbiItem[];
       console.log("Abi", Abi)
@@ -292,7 +294,18 @@ const LoginPage: React.FC = () => {
         </div>
       )}
       <Button variant="contained" onClick={handleLoginClick}>Cognito 로그인</Button>
+      <br></br>
+      <a id="kakao-login-btn" href="javascript:loginWithKakao()">
+      <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="272" alt="Kakao Login Button!" />
+      </a>
+      <br></br>
+      <button id="apple-sign" > Sign in with Apple</button>
+      <br></br>
+      <button id="apple-sign" >'G' Sign in with Google</button>
+
+
     </div>
+    
   );
 };
 
